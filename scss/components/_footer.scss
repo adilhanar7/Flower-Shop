@@ -1,0 +1,64 @@
+.footer{
+    padding: vw(90) 0 vw(65);
+    &__rights{
+        @include font(vw(13),bold,vw(25));
+        color: $text-gray-blue;
+    }
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        padding: vw(48) 0 vw(42);
+        ul{
+            list-style-type: none;
+            display: flex;
+            li{
+                margin-left: vw(55);
+                a{
+                    text-decoration: none;
+                    @include font(vw(13),bold,vw(25));
+                    color: $text-gray-blue
+                }
+            }
+        }
+    }
+    &__logo{
+        @include font(vw(24),bold,vw(30));
+        color: $text-dark-blue;
+        margin: 0;
+    }
+        &-list{
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            &__item{
+                width: 33.33%;
+                margin-bottom: vw(20);
+            }
+            &__link{
+                @include font(vw(13),bold,vw(25));
+                color: $text-gray-blue;
+            }
+        }
+        &__reviews{
+            span{
+            @include font(vw(14),bold,vw(30));
+            color:$text-gray-blue;
+            margin-right: vw(20);
+            }
+            img{
+            transform: rotate(180deg);
+            }
+        }
+        &__rating{
+            margin-bottom: vw(20);
+        }
+        &__row{
+            justify-content: space-between;
+            padding-bottom: vw(65);
+            &-lefts{
+             align-items: center;
+             display: flex;
+             justify-content: space-around;
+            }
+        }
+ }

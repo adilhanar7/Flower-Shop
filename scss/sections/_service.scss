@@ -1,0 +1,186 @@
+/*.features{
+    .wedding{
+        background: url('../../img/Wedding.png')no-repeat;
+        width: vw(540);
+        height: vw(350);
+    }
+    .send{
+        background: url('../../img/Send.png')no-repeat;
+        width: vw(540);
+        height: vw(350);
+    }
+    .order{
+        background: url('../../img/order.png')no-repeat;
+        width: vw(540);
+        height: vw(350);
+    }
+    &__video{
+        padding: vh(50);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: vw(10);
+        box-sizing: border-box;
+    }
+    &__play{
+        background: $bg-pink;
+        border-radius: 100%;
+        width: vw(60);
+        height: vw(60);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: vw(0) vw(10) vw(30) rgba(229, 46, 123, 0.5);
+    }
+    &__shape{
+        clip-path: polygon(100% 46%,0 0,0 100%);
+        background: $bg-white;
+        width: vw(10);
+        height: vw(12);
+    }
+    &__more {
+        background: #0D111A;
+        opacity: 0.5;
+        border-radius: 30px;
+        width: vw(40);
+        height: vw(40);
+        display: flex;
+        align-items: center;
+        justify-content: center;     
+    }
+    &__bottom{
+        align-items: center;
+        justify-content: space-between;
+        margin-top: vw(130);
+    }
+    &__description{
+        color: $text-white;
+        @include font(vw(16),600 ,vw(25));
+    }
+    &__title{
+        @include font(vw(36),normal ,vw(30));
+        margin: vw(45)0;
+        color: $text-gray-blue;
+        strong{
+        @include font(vw(36),bold ,vw(70));
+        color: $text-dark-blue;
+        }
+    }
+    &__price{
+        text-decoration: none;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        color: $text-gray-blue;
+        @include font(vw(16),normal ,vw(25));
+    }
+    &__text{
+        padding:vw(0) vw(100);
+    }
+    &__block{
+        margin-top: vw(125);
+    }
+}*/
+.service{
+    padding: vw(125); 
+    &__row{
+        position: relative;
+        margin-bottom: vw(125);
+        &:last-child{
+            margin-bottom:0;
+        }
+    }
+    &-item.service-item__image{
+        position: relative;
+        padding: vw(50);
+        min-height: vw(350);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .play{
+            width: vw(40);
+            height: vw(40);
+            background: $bg-pink;
+            box-shadow: vw(0) vw(10) vw(30) $bg-pink;
+            border-radius: vw(30);
+            transition: 0.3s;
+            @include flex();
+            svg,svg path{
+                width: vw(10);
+                height: vw(10);
+                transition: 0.3s;
+            }
+            &:hover{
+            background: $bg-white;
+            box-shadow: vw(0) vw(10) vw(30) $bg-white;
+            cursor: pointer;
+            svg path{
+                fill: $bg-pink;
+            }
+            svg{
+             transform: rotate(360deg);
+            }
+          }
+        }
+        img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: vw(350);
+            z-index: -1;
+            border-radius: vw(10);
+        }
+        
+        .service__item__subtitle{
+           @include font(vw(16),600,vw(30));
+            color: $text-white;
+        }
+
+    }
+     &-item{
+         padding:0 vw(100);
+         &__title{
+            @include font(vw(34),400,vw(60));
+            color: #4D5E80;
+            strong{
+            @include font(vw(34),400 ,vw(60));
+            color: $text-dark-blue;
+             }
+         }
+         &__link{
+            @include font(vw(16),400,vw(30));
+            color: #6B7A99;    
+            display: flex;
+            @include flex(flex-start);
+           /* align-items: center;
+            justify-content: center;*/
+            svg{
+                margin-left: vw(55);
+                width: vw(15);
+                height: vw(15);
+            }
+         }
+     }
+     .next{
+        position: absolute;
+        bottom: vw(50);
+        right: vw(50);
+        background: rgba(0,0,0,0.5);
+        /*opacity: 0.5;*/
+        border-radius: vw(30);
+        width: vw(60);
+        height: vw(60);
+        cursor: pointer;
+        @include flex();
+        svg,svg path{
+            width: vw(20);
+            height: vw(20);
+            transition: 0.2s;
+        }
+        &:hover svg{
+            transform: translateX(vw(5));
+        }
+    }
+}

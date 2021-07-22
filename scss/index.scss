@@ -1,0 +1,142 @@
+@import'./helpers/variables';
+@import './helpers/fonts';
+@import './helpers/mixins';
+@import './helpers/functions';
+
+@import './components/header';
+
+@import './sections/hero';
+@import './sections/about';
+@import'./sections/service';
+@import './sections/catalog';
+@import './sections/social';
+@import './sections/location';
+
+@import './components/footer';
+
+
+
+body{
+    margin: 0;
+    background: $bg-body;
+}
+.container{
+    max-width: vw(900);
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.col-4{
+    width: 33.33%;
+}
+.bg-text{
+    position: absolute;
+    @include font(vw(150),800 ,vh(220));
+    opacity: 0.03;
+    color: #002881;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: -1;
+}
+.pink-btn{
+    color: $text-pink;
+    background: $bg-light-pink;
+    border-radius: vw(30);
+    text-decoration: none;
+    @include font(vw(13),700 ,vh(30));
+    padding: vw(5) vh(30);
+}
+.col-6{
+    width: 50%;
+}
+
+.title{
+    @include font(vw(20),300 ,vw(34));
+    color: $text-gray-blue;
+    text-align: center;
+    position: relative;
+    strong{
+    @include font(vw(20),bold ,vw(34));
+    color: $text-dark-blue;
+    }
+    
+     .title__bg-text{
+       position: absolute;
+       left:50%;
+       top: 50%;
+       transform: translate(-50%,-50%);
+       @include font(vw(150),800 ,vh(220));
+       opacity: 0.03;
+       color: #002881;
+       opacity: 0.03;
+       z-index: -1;
+     }    
+}
+
+.text{
+    @include font(vw(15),500 ,vw(25));
+    color: $text-gray-blue;
+    max-width: vw(650);
+    /*flex-wrap: wrap;*/
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /*align-content: center;
+    justify-content: center;
+    justify-self: center;*/
+}
+.col-3{
+    width: 25%;
+}
+/*
+.orange-btn{
+    background: $bg-orange66;
+    border-radius: vw(30);
+    border: none;
+    @include font(vw(13),bold ,vw(30));
+    padding: vw(5) vh(30);
+    color: $text-orange66;
+
+}
+.title-bg{
+    position: absolute;
+    @include font(vw(150),800 ,vw(220));
+    opacity: 0.03;
+    color: #002881;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: -1;
+    top: -270%;
+}*/
+
+
+
+.badge{
+    @include font(vw(12),800,vw(20));
+    color: $text-orange;
+    background: $bg-light-orange;
+    border-radius: vw(30);
+    border: none;
+    outline: none;
+    padding: vw(5)vw(22);
+    &__orange{
+        color: $text-orange;
+        background: $bg-light-orange;
+    }
+    &__pink{
+    color: $text-pink;
+    background: $bg-light-pink;
+    }
+
+}
+hr{
+    border-color: #EDEFF2;
+    margin: 0;
+}

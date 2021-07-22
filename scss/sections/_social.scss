@@ -1,0 +1,68 @@
+.social{
+        text-align: center;
+        position: relative;
+        padding-bottom: vw(160);
+        .row{
+            /*margin: vw(-15);*/
+            display: flex !important;
+        }
+        &__top{
+            position: relative;
+        }
+        .title{
+            margin-bottom: vw(165);
+        }
+        .slick-prev.slick-arrow{
+            position: absolute;
+            left: 0;
+            font-size: 0;
+            width: vw(50);
+            height: vw(50);
+            background:url('../../img/arrow.svg')center center no-repeat;
+            background-color:$bg-white;
+            @include flex();
+            border: none;
+            top: vw(-210);
+            border-radius: 50%;
+            box-shadow: 0 vw(2)vw(5)rgba(0,0,0,0.5);
+        }
+        .slick-next.slick-arrow{
+            position: absolute;
+            right: 0;
+            font-size: 0;
+            width: vw(50);
+            height: vw(50);
+            background:url('../../img/arrow.svg')center center no-repeat;
+            background-color:$bg-white;
+            @include flex();
+            border: none;
+            top: vw(-210);
+            border-radius: 50%;
+            box-shadow: 0 vw(2)vw(5)rgba(0,0,0,0.5);
+            transform: rotate(-180deg);
+        }
+        &-item{
+            position: relative;
+            padding: vw(15);
+            &__link{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%)scale(0);
+                display: inline-block;
+                width: vw(80);
+                height: vw(80);
+                background: rgba(0,0,0,0.5);
+                border-radius: vw(120);
+                @include flex();
+                transition: 0.6s;
+                svg{
+                    width: vw(23);
+                    height: vw(20);
+                }
+            }
+            &:hover &__link{
+                transform: translate(-50%,-50%)scale(1);
+            }
+        }
+}

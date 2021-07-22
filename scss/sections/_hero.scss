@@ -1,0 +1,98 @@
+.hero{
+    background: url('../../img/hero-bg.png')no-repeat center;
+    height: 120vh;
+    background-size: cover ;
+    background-position: center vw(-139);
+    position: relative;
+    z-index: 0;
+    &__content{
+         padding-top: vh(300);
+         max-width: vw(700);
+         margin: 0 auto;
+         text-align: center;
+     }
+     &__title{
+        @include font(vw(61) , 400 , vw(90));
+        text-align: center;
+        color: $text-white;
+        margin: vh(67) 0 vh(68);
+        
+     }
+    &__link{
+        @include font(vw(12),800 ,vw(20));
+        color: $text-white;
+        background-color: $bg-pink;
+        border-radius: vw(30);
+        padding: vw(5) vw(16);
+        text-decoration: none;
+
+     }
+     &-list {
+         display: flex;
+         list-style-type: none;
+         padding-left: 0;
+         justify-content: center;
+         margin-bottom: vh(160);
+         &__item{
+            @include font(vw(14),bold ,vw(30));
+            color: $text-white;
+            margin-right: vw(15);
+            position: relative;
+            &::after{
+                content: '×';
+                position: absolute;
+                right: vw(-10);
+            }
+            &:last-child{
+                &::after{
+                    display: none;
+                }
+            }
+         }
+     }
+     &-info{
+         display: flex;
+         color: $text-white;
+         list-style-type: none;
+         text-align: left;
+         padding-left: 0;
+         &__item{
+            @include font(vw(13),700 ,vw(25));
+            margin-right: vw(61);
+            display: flex;
+            &:last-child{
+                margin-right: vh(0);
+            }
+            
+        }
+            }
+            span{
+                @include font(vw(13),bold ,vw(25));
+                color: $text-white;
+            }
+        img{
+            margin-right: vw(30);
+            width: vw(17);
+        }
+        
+     }
+     .hero__anchor{
+        @include font(vw(14),700 ,vh(30));
+        text-decoration: none;
+        padding: vw(15) vh(30);
+        background: $bg-white;
+        box-shadow: 0 vh(10) vh(30)black;
+        border-radius: vw(30);
+        transform: translateX(-50%);
+        left: 50%;
+        bottom: 20%;
+        position: absolute;
+        color: $text-gray-blue;
+    }
+
+
+
+
+
+
+
