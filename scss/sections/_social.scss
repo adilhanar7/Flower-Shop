@@ -44,6 +44,9 @@
         &-item{
             position: relative;
             padding: vw(15);
+            img{
+                max-width: 100%;
+            }
             &__link{
                 position: absolute;
                 left: 50%;

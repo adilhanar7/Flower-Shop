@@ -27,7 +27,7 @@
   width: 100%;
   position: absolute;
   left: 0vw;
-  top: 2.5vh;
+  top: 6.93359vh;
   z-index: 1;
 }
 
@@ -38,45 +38,48 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*justify-content: space-between;*/
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .burger {
-  margin-right: 3.90625vw;
+  margin-right: 2.5vw;
 }
 
 .burger span {
   position: relative;
   display: inline-block;
-  width: 1.75781vw;
-  height: 0.19531vw;
-  border-radius: 0.29297vw;
+  width: 1.125vw;
+  height: 0.125vw;
+  border-radius: 0.1875vw;
   background-color: #ffffff;
 }
 
 .burger span::before, .burger span::after {
   content: '';
   position: absolute;
-  -webkit-transform: translateY(-0.48828vw);
-          transform: translateY(-0.48828vw);
+  -webkit-transform: translateY(-0.3125vw);
+          transform: translateY(-0.3125vw);
   width: 100%;
   height: 100%;
   background: #ffffff;
 }
 
 .burger span::after {
-  -webkit-transform: translateY(0.48828vw);
-          transform: translateY(0.48828vw);
+  -webkit-transform: translateY(0.3125vw);
+          transform: translateY(0.3125vw);
+  background: #ffffff;
 }
 
 .logo {
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: bold;
-  font-size: 1.95312vw;
+  font-size: 1.25vw;
   line-height: 0vw;
   color: #ffffff;
-  margin-right: 0.97656vw;
+  margin-right: 1.33438vw;
 }
 
 .search {
@@ -86,26 +89,28 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 1.46484vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 0.6875vw;
 }
 
 .search svg {
-  width: 1.95312vw;
-  height: 1.95312vw;
+  width: 1.25vw;
+  height: 1.25vw;
 }
 
 .search input {
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: bold;
-  font-size: 1.36719vw;
+  font-size: 0.875vw;
   line-height: 0vw;
-  margin-left: 2.53906vw;
+  margin-left: 1.0625vw;
   color: #ffffff;
   opacity: 1;
   background-color: transparent;
   border: none;
-  outline: none;
 }
 
 .nav__list {
@@ -119,7 +124,7 @@
 }
 
 .nav__item {
-  margin-right: 3.32031vw;
+  margin-right: 2.125vw;
 }
 
 .nav__item:last-child {
@@ -131,9 +136,9 @@
   color: #ffffff;
   font-family: 'SF Pro Display';
   font-style: normal;
-  font-weight: 43.75vh;
-  font-size: 1.36719vw;
-  line-height: 2.44141vw;
+  font-weight: 68.35938vh;
+  font-size: 0.9375vw;
+  line-height: 1.5625vw;
 }
 
 .call {
@@ -142,28 +147,28 @@
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: bold;
-  font-size: 1.26953vw;
-  line-height: 2.92969vw;
+  font-size: 0.9375vw;
+  line-height: 1.875vw;
   color: #ffffff;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 5.85938vw;
+  margin-left: 3.75vw;
 }
 
 .hero {
   background: url("../img/hero-bg.png") no-repeat center;
   height: 120vh;
   background-size: cover;
-  background-position: center -13.57422vw;
+  background-position: center -8.6875vw;
   position: relative;
   z-index: 0;
 }
 
 .hero__content {
-  padding-top: 18.75vh;
-  max-width: 68.35938vw;
+  padding-top: 29.29688vh;
+  max-width: 43.75vw;
   margin: 0 auto;
   text-align: center;
 }
@@ -172,23 +177,23 @@
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 400;
-  font-size: 5.95703vw;
-  line-height: 8.78906vw;
+  font-size: 3.8125vw;
+  line-height: 5.625vw;
   text-align: center;
   color: #ffffff;
-  margin: 4.1875vh 0 4.25vh;
+  margin: 6.54297vh 0 6.64062vh;
 }
 
 .hero__link {
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 800;
-  font-size: 1.17188vw;
-  line-height: 1.95312vw;
+  font-size: 0.75vw;
+  line-height: 1.25vw;
   color: #ffffff;
   background-color: #E62E7B;
-  border-radius: 2.92969vw;
-  padding: 0.48828vw 1.5625vw;
+  border-radius: 1.875vw;
+  padding: 0.3125vw 1vw;
   text-decoration: none;
 }
 
@@ -201,24 +206,24 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 10vh;
+  margin-bottom: 15.625vh;
 }
 
 .hero-list__item {
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: bold;
-  font-size: 1.36719vw;
-  line-height: 2.92969vw;
+  font-size: 0.875vw;
+  line-height: 1.875vw;
   color: #ffffff;
-  margin-right: 1.46484vw;
+  margin-right: 0.9375vw;
   position: relative;
 }
 
 .hero-list__item::after {
   content: '×';
   position: absolute;
-  right: -0.97656vw;
+  right: -0.625vw;
 }
 
 .hero-list__item:last-child::after {
@@ -239,9 +244,9 @@
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 700;
-  font-size: 1.26953vw;
-  line-height: 2.44141vw;
-  margin-right: 5.95703vw;
+  font-size: 0.8125vw;
+  line-height: 1.5625vw;
+  margin-right: 3.8125vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,36 +256,36 @@
   margin-right: 0vh;
 }
 
-.hero span {
+.hero-info__item span {
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: bold;
-  font-size: 1.26953vw;
-  line-height: 2.44141vw;
+  font-size: 0.8125vw;
+  line-height: 1.5625vw;
   color: #ffffff;
 }
 
-.hero img {
-  margin-right: 2.92969vw;
-  width: 1.66016vw;
+.hero-info__item img {
+  margin-right: 1.875vw;
+  width: 1.0625vw;
 }
 
 .hero__anchor {
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 700;
-  font-size: 1.36719vw;
-  line-height: 1.875vh;
+  font-size: 0.875vw;
+  line-height: 2.92969vh;
   text-decoration: none;
-  padding: 1.46484vw 1.875vh;
+  padding: 0.9375vw 2.92969vh;
   background: #ffffff;
-  -webkit-box-shadow: 0 0.625vh 1.875vh black;
-          box-shadow: 0 0.625vh 1.875vh black;
-  border-radius: 2.92969vw;
+  -webkit-box-shadow: 0 0.97656vh 2.92969vh black;
+          box-shadow: 0 0.97656vh 2.92969vh black;
+  border-radius: 1.875vw;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   left: 50%;
-  bottom: 20%;
+  bottom: 13.3%;
   position: absolute;
   color: #4d5e80;
 }
@@ -295,22 +300,22 @@
 }
 
 .about .row {
-  margin: -1.46484vw;
+  margin: -0.9375vw;
 }
 
 .about__item {
   background: #ffffff;
-  border-radius: 0.97656vw;
-  -webkit-box-shadow: 0vw 0.19531vw 0.48828vw rgba(54, 61, 70, 0.03);
-          box-shadow: 0vw 0.19531vw 0.48828vw rgba(54, 61, 70, 0.03);
-  padding: 3.71094vw 1.17188vw;
-  height: 34.17969vw;
+  border-radius: 0.625vw;
+  -webkit-box-shadow: 0vw 0.125vw 0.3125vw rgba(54, 61, 70, 0.03);
+          box-shadow: 0vw 0.125vw 0.3125vw rgba(54, 61, 70, 0.03);
+  padding: 2.375vw 0.75vw;
+  height: 21.875vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1.46484vw;
+  margin: 0.9375vw;
   text-align: center;
 }
 
@@ -318,8 +323,8 @@
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 300;
-  font-size: 1.95312vw;
-  line-height: 3.32031vw;
+  font-size: 1.25vw;
+  line-height: 2.125vw;
   color: #4d5e80;
 }
 
@@ -327,8 +332,8 @@
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: bold;
-  font-size: 1.95312vw;
-  line-height: 3.32031vw;
+  font-size: 1.25vw;
+  line-height: 2.125vw;
   color: #2c3150;
 }
 
@@ -336,10 +341,10 @@
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
-  font-size: 1.46484vw;
-  line-height: 1.5625vw;
+  font-size: 0.9375vw;
+  line-height: 1vw;
   color: #4d5e80;
-  max-width: 12.69531vw;
+  max-width: 8.125vw;
 }
 
 .about__container {
@@ -348,20 +353,20 @@
 
 .about__container .about__link {
   background: #e9d7e0;
-  border-radius: 2.92969vw;
+  border-radius: 1.875vw;
   text-decoration: none;
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 700;
-  font-size: 1.26953vw;
-  line-height: 1.875vh;
-  padding: 0.97656vw 1.875vh;
+  font-size: 0.8125vw;
+  line-height: 2.92969vh;
+  padding: 0.625vw 2.92969vh;
   color: #E62E7B;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: -2.92969vw;
+  bottom: -5.6875vw;
 }
 
 /*.features{
@@ -448,12 +453,12 @@
     }
 }*/
 .service {
-  padding: 12.20703vw;
+  padding: 7.8125vw;
 }
 
 .service__row {
   position: relative;
-  margin-bottom: 12.20703vw;
+  margin-bottom: 7.8125vw;
 }
 
 .service__row:last-child {
@@ -462,8 +467,8 @@
 
 .service-item.service-item__image {
   position: relative;
-  padding: 4.88281vw;
-  min-height: 34.17969vw;
+  padding: 3.125vw;
+  min-height: 21.875vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -479,12 +484,12 @@
 }
 
 .service-item.service-item__image .play {
-  width: 3.90625vw;
-  height: 3.90625vw;
+  width: 2.5vw;
+  height: 2.5vw;
   background: #E62E7B;
-  -webkit-box-shadow: 0vw 0.97656vw 2.92969vw #E62E7B;
-          box-shadow: 0vw 0.97656vw 2.92969vw #E62E7B;
-  border-radius: 2.92969vw;
+  -webkit-box-shadow: 0vw 0.625vw 1.875vw #E62E7B;
+          box-shadow: 0vw 0.625vw 1.875vw #E62E7B;
+  border-radius: 1.875vw;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   display: -webkit-box;
@@ -499,16 +504,16 @@
 }
 
 .service-item.service-item__image .play svg, .service-item.service-item__image .play svg path {
-  width: 0.97656vw;
-  height: 0.97656vw;
+  width: 0.625vw;
+  height: 0.625vw;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .service-item.service-item__image .play:hover {
   background: #ffffff;
-  -webkit-box-shadow: 0vw 0.97656vw 2.92969vw #ffffff;
-          box-shadow: 0vw 0.97656vw 2.92969vw #ffffff;
+  -webkit-box-shadow: 0vw 0.625vw 1.875vw #ffffff;
+          box-shadow: 0vw 0.625vw 1.875vw #ffffff;
   cursor: pointer;
 }
 
@@ -526,30 +531,30 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 34.17969vw;
+  height: 21.875vw;
   z-index: -1;
-  border-radius: 0.97656vw;
+  border-radius: 0.625vw;
 }
 
 .service-item.service-item__image .service__item__subtitle {
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 600;
-  font-size: 1.5625vw;
-  line-height: 2.92969vw;
+  font-size: 1vw;
+  line-height: 1.875vw;
   color: #ffffff;
 }
 
 .service-item {
-  padding: 0 9.76562vw;
+  padding: 0 6.25vw;
 }
 
 .service-item__title {
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 400;
-  font-size: 3.32031vw;
-  line-height: 5.85938vw;
+  font-size: 2.125vw;
+  line-height: 3.75vw;
   color: #4D5E80;
 }
 
@@ -557,8 +562,8 @@
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 400;
-  font-size: 3.32031vw;
-  line-height: 5.85938vw;
+  font-size: 2.125vw;
+  line-height: 3.75vw;
   color: #2c3150;
 }
 
@@ -566,8 +571,8 @@
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 400;
-  font-size: 1.5625vw;
-  line-height: 2.92969vw;
+  font-size: 1vw;
+  line-height: 1.875vw;
   color: #6B7A99;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -584,20 +589,20 @@
 }
 
 .service-item__link svg {
-  margin-left: 5.37109vw;
-  width: 1.46484vw;
-  height: 1.46484vw;
+  margin-left: 3.4375vw;
+  width: 0.9375vw;
+  height: 0.9375vw;
 }
 
 .service .next {
   position: absolute;
-  bottom: 4.88281vw;
-  right: 4.88281vw;
+  bottom: 3.125vw;
+  right: 3.125vw;
   background: rgba(0, 0, 0, 0.5);
   /*opacity: 0.5;*/
-  border-radius: 2.92969vw;
-  width: 5.85938vw;
-  height: 5.85938vw;
+  border-radius: 1.875vw;
+  width: 3.75vw;
+  height: 3.75vw;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -611,15 +616,15 @@
 }
 
 .service .next svg, .service .next svg path {
-  width: 1.95312vw;
-  height: 1.95312vw;
+  width: 1.25vw;
+  height: 1.25vw;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
 .service .next:hover svg {
-  -webkit-transform: translateX(0.48828vw);
-          transform: translateX(0.48828vw);
+  -webkit-transform: translateX(0.3125vw);
+          transform: translateX(0.3125vw);
 }
 
 .catalog {
@@ -627,32 +632,32 @@
 }
 
 .catalog__row {
-  padding-top: 5.85938vw;
+  padding-top: 3.75vw;
 }
 
 .catalog-item {
   background: #ffffff;
-  padding: 3.125vw 0 0 0;
+  padding: 2vw 0 0 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
 }
 
 .catalog-item__icon {
-  top: 2.53906vw;
-  right: 2.53906vw;
+  top: 1.625vw;
+  right: 1.625vw;
   position: absolute;
-  width: 1.95312vw;
-  height: 1.95312vw;
+  width: 1.25vw;
+  height: 1.25vw;
   fill: #dfdede;
 }
 
 .catalog-item__title {
   font-family: 'SF Pro Display';
   font-style: normal;
-  font-weight: 700;
-  font-size: 1.26953vw;
-  line-height: 2.44141vw;
+  font-weight: 800;
+  font-size: 0.9375vw;
+  line-height: 1.5625vw;
   color: #6B7A99;
 }
 
@@ -663,34 +668,48 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 5.85938vw;
+  min-height: 3.75vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 0.19531vw solid #F5F6F7;
+  border: 0.1875vw solid #F5F6F7;
+  border-left: 0.125vw solid #F5F6F7;
+}
+
+.catalog-item__bottom:last-child {
+  margin-left: 0.1875vw solid #F5F6F7;
 }
 
 .catalog-item__rating {
   width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .catalog-item__rating span {
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 700;
-  font-size: 1.26953vw;
-  line-height: 2.44141vw;
+  font-size: 0.875vw;
+  line-height: 1.5625vw;
   color: #6B7A99;
 }
 
 .catalog-item__price {
-  border: 0.19531vw solid #F5F6F7;
+  border: 0.1625vw solid #F5F6F7;
   width: 33%;
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 700;
-  font-size: 1.26953vw;
-  line-height: 2.44141vw;
+  font-size: 0.875vw;
+  line-height: 1.5625vw;
   color: #6B7A99;
   -ms-flex-item-align: stretch;
       align-self: stretch;
@@ -703,8 +722,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: -0.09766vw;
-  margin-bottom: -0.19531vw;
+  margin-top: -0.0625vw;
+  margin-bottom: -0.125vw;
 }
 
 .catalog-item__buy {
@@ -712,8 +731,8 @@
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 700;
-  font-size: 1.26953vw;
-  line-height: 2.44141vw;
+  font-size: 0.875vw;
+  line-height: 1.5625vw;
   color: #E62E7B;
   border: none;
   background-color: transparent;
@@ -754,7 +773,7 @@
 .social {
   text-align: center;
   position: relative;
-  padding-bottom: 15.625vw;
+  padding-bottom: 10vw;
 }
 
 .social .row {
@@ -769,15 +788,15 @@
 }
 
 .social .title {
-  margin-bottom: 16.11328vw;
+  margin-bottom: 10.3125vw;
 }
 
 .social .slick-prev.slick-arrow {
   position: absolute;
   left: 0;
   font-size: 0;
-  width: 4.88281vw;
-  height: 4.88281vw;
+  width: 3.125vw;
+  height: 3.125vw;
   background: url("../img/arrow.svg") center center no-repeat;
   background-color: #ffffff;
   display: -webkit-box;
@@ -790,18 +809,18 @@
       -ms-flex-pack: center;
           justify-content: center;
   border: none;
-  top: -20.50781vw;
+  top: -13.125vw;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0.19531vw 0.48828vw rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0.19531vw 0.48828vw rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0.125vw 0.3125vw rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.125vw 0.3125vw rgba(0, 0, 0, 0.5);
 }
 
 .social .slick-next.slick-arrow {
   position: absolute;
   right: 0;
   font-size: 0;
-  width: 4.88281vw;
-  height: 4.88281vw;
+  width: 3.125vw;
+  height: 3.125vw;
   background: url("../img/arrow.svg") center center no-repeat;
   background-color: #ffffff;
   display: -webkit-box;
@@ -814,17 +833,21 @@
       -ms-flex-pack: center;
           justify-content: center;
   border: none;
-  top: -20.50781vw;
+  top: -13.125vw;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0.19531vw 0.48828vw rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0.19531vw 0.48828vw rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0.125vw 0.3125vw rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.125vw 0.3125vw rgba(0, 0, 0, 0.5);
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
 
 .social-item {
   position: relative;
-  padding: 1.46484vw;
+  padding: 0.9375vw;
+}
+
+.social-item img {
+  max-width: 100%;
 }
 
 .social-item__link {
@@ -834,10 +857,10 @@
   -webkit-transform: translate(-50%, -50%) scale(0);
           transform: translate(-50%, -50%) scale(0);
   display: inline-block;
-  width: 7.8125vw;
-  height: 7.8125vw;
+  width: 5vw;
+  height: 5vw;
   background: rgba(0, 0, 0, 0.5);
-  border-radius: 11.71875vw;
+  border-radius: 7.5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -852,8 +875,8 @@
 }
 
 .social-item__link svg {
-  width: 2.24609vw;
-  height: 1.95312vw;
+  width: 1.4375vw;
+  height: 1.25vw;
 }
 
 .social-item:hover .social-item__link {
@@ -862,7 +885,7 @@
 }
 
 .location {
-  padding: 11.71875vw;
+  padding: 7.5vw;
 }
 
 .location ul {
@@ -878,33 +901,33 @@
 }
 
 .location__map .map {
-  height: 52.73438vw;
+  height: 33.75vw;
 }
 
 .location-modal {
   position: absolute;
-  padding: 2.92969vw;
+  padding: 1.875vw;
   background: #ffffff;
-  right: 1.95312vw;
-  bottom: 3.90625vw;
-  -webkit-box-shadow: 0 0.19531vw 0.48828vw rgba(54, 61, 77, 0.05);
-          box-shadow: 0 0.19531vw 0.48828vw rgba(54, 61, 77, 0.05);
-  border-radius: 0.97656vw;
+  right: 1.25vw;
+  bottom: 2.5vw;
+  -webkit-box-shadow: 0 0.125vw 0.3125vw rgba(54, 61, 77, 0.05);
+          box-shadow: 0 0.125vw 0.3125vw rgba(54, 61, 77, 0.05);
+  border-radius: 0.625vw;
 }
 
 .location-modal img {
-  margin-right: 3.51562vw;
-  width: 1.95312vw;
-  height: 1.95312vw;
+  margin-right: 2.25vw;
+  width: 1.25vw;
+  height: 1.25vw;
 }
 
 .location-modal__item {
-  margin-bottom: 2.44141vw;
+  margin-bottom: 1.5625vw;
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: bold;
-  font-size: 1.26953vw;
-  line-height: 2.44141vw;
+  font-size: 0.8125vw;
+  line-height: 1.5625vw;
   color: #6B7A99;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -926,7 +949,7 @@
 }
 
 .location-modal__item span + span {
-  margin-left: 2.44141vw;
+  margin-left: 1.5625vw;
 }
 
 .location-modal__list {
@@ -935,15 +958,15 @@
 }
 
 .footer {
-  padding: 8.78906vw 0 6.34766vw;
+  padding: 5.625vw 0 4.0625vw;
 }
 
 .footer__rights {
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: bold;
-  font-size: 1.26953vw;
-  line-height: 2.44141vw;
+  font-size: 0.8125vw;
+  line-height: 1.5625vw;
   color: #4d5e80;
 }
 
@@ -954,7 +977,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 4.6875vw 0 4.10156vw;
+  padding: 3vw 0 2.625vw;
 }
 
 .footer__bottom ul {
@@ -965,7 +988,7 @@
 }
 
 .footer__bottom ul li {
-  margin-left: 5.37109vw;
+  margin-left: 3.4375vw;
 }
 
 .footer__bottom ul li a {
@@ -973,8 +996,8 @@
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: bold;
-  font-size: 1.26953vw;
-  line-height: 2.44141vw;
+  font-size: 0.8125vw;
+  line-height: 1.5625vw;
   color: #4d5e80;
 }
 
@@ -982,8 +1005,8 @@
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: bold;
-  font-size: 2.34375vw;
-  line-height: 2.92969vw;
+  font-size: 1.5vw;
+  line-height: 1.875vw;
   color: #2c3150;
   margin: 0;
 }
@@ -999,15 +1022,15 @@
 
 .footer-list__item {
   width: 33.33%;
-  margin-bottom: 1.95312vw;
+  margin-bottom: 1.25vw;
 }
 
 .footer-list__link {
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: bold;
-  font-size: 1.26953vw;
-  line-height: 2.44141vw;
+  font-size: 0.8125vw;
+  line-height: 1.5625vw;
   color: #4d5e80;
 }
 
@@ -1015,10 +1038,10 @@
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: bold;
-  font-size: 1.36719vw;
-  line-height: 2.92969vw;
+  font-size: 0.875vw;
+  line-height: 1.875vw;
   color: #4d5e80;
-  margin-right: 1.95312vw;
+  margin-right: 1.25vw;
 }
 
 .footer__reviews img {
@@ -1027,14 +1050,14 @@
 }
 
 .footer__rating {
-  margin-bottom: 1.95312vw;
+  margin-bottom: 1.25vw;
 }
 
 .footer__row {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 6.34766vw;
+  padding-bottom: 4.0625vw;
 }
 
 .footer__row-lefts {
@@ -1054,7 +1077,7 @@ body {
 }
 
 .container {
-  max-width: 87.89062vw;
+  max-width: 56.25vw;
   margin: 0 auto;
 }
 
@@ -1079,8 +1102,8 @@ a {
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 800;
-  font-size: 14.64844vw;
-  line-height: 13.75vh;
+  font-size: 9.375vw;
+  line-height: 21.48438vh;
   opacity: 0.03;
   color: #002881;
   -webkit-transform: translateX(-50%);
@@ -1092,14 +1115,14 @@ a {
 .pink-btn {
   color: #E62E7B;
   background: #e9d7e0;
-  border-radius: 2.92969vw;
+  border-radius: 1.875vw;
   text-decoration: none;
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 700;
-  font-size: 1.26953vw;
-  line-height: 1.875vh;
-  padding: 0.48828vw 1.875vh;
+  font-size: 0.8125vw;
+  line-height: 2.92969vh;
+  padding: 0.3125vw 2.92969vh;
 }
 
 .col-6 {
@@ -1110,8 +1133,8 @@ a {
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 300;
-  font-size: 1.95312vw;
-  line-height: 3.32031vw;
+  font-size: 1.25vw;
+  line-height: 2.125vw;
   color: #4d5e80;
   text-align: center;
   position: relative;
@@ -1121,8 +1144,8 @@ a {
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: bold;
-  font-size: 1.95312vw;
-  line-height: 3.32031vw;
+  font-size: 1.25vw;
+  line-height: 2.125vw;
   color: #2c3150;
 }
 
@@ -1135,8 +1158,8 @@ a {
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 800;
-  font-size: 14.64844vw;
-  line-height: 13.75vh;
+  font-size: 9.375vw;
+  line-height: 21.48438vh;
   opacity: 0.03;
   color: #002881;
   opacity: 0.03;
@@ -1147,10 +1170,10 @@ a {
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
-  font-size: 1.46484vw;
-  line-height: 2.44141vw;
+  font-size: 0.9375vw;
+  line-height: 1.5625vw;
   color: #4d5e80;
-  max-width: 63.47656vw;
+  max-width: 40.625vw;
   /*flex-wrap: wrap;*/
   text-align: center;
   position: relative;
@@ -1190,14 +1213,14 @@ a {
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 800;
-  font-size: 1.17188vw;
-  line-height: 1.95312vw;
+  font-size: 0.75vw;
+  line-height: 1.25vw;
   color: #FF6633;
   background: rgba(255, 102, 51, 0.1);
-  border-radius: 2.92969vw;
+  border-radius: 1.875vw;
   border: none;
   outline: none;
-  padding: 0.48828vw 2.14844vw;
+  padding: 0.3125vw 1.375vw;
 }
 
 .badge__orange {

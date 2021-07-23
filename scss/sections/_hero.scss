@@ -63,17 +63,16 @@
             &:last-child{
                 margin-right: vh(0);
             }
-            
-        }
-            }
             span{
                 @include font(vw(13),bold ,vw(25));
                 color: $text-white;
-            }
+        }
         img{
             margin-right: vw(30);
             width: vw(17);
         }
+    }
+}
         
      }
      .hero__anchor{
@@ -85,7 +84,7 @@
         border-radius: vw(30);
         transform: translateX(-50%);
         left: 50%;
-        bottom: 20%;
+        bottom: 13.3%;
         position: absolute;
         color: $text-gray-blue;
     }

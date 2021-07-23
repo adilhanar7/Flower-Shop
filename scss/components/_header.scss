@@ -2,13 +2,13 @@
     width: 100%;
     position: absolute;
     left: vw(0);
-    top: vh(40);
+    top: vh(71);
     z-index: 1;
     &__row{
-        display: flex;
-        align-items: center;
-        /*justify-content: space-between;*/
-        
+        @include flex();
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-between;
     }
 }
 .burger {
@@ -26,34 +26,36 @@
 			transform: translateY(vw(-5));
 			width: 100%;
 			height: 100%;
-			background: $bg-white;
+			background:$bg-white;
 		}
 		&::after {
 			transform: translateY(vw(5));
+            background: $bg-white;
 		}
 	}
 }
 .logo{
 @include font(vw(20), bold ,vw(0));
 color: $text-white;
-margin-right: vw(10);
+margin-right: vw(21.35);
 }
 .search{
-    display: flex;
-    align-items: center;
-    margin-right: vw(15);
+    // display: flex;
+    // align-items: center;
+    @include flex();
+    margin-right: vw(11);
     svg{
         width: vw(20);
         height: vw(20); 
     }
     input{
         @include font(vw(14), bold ,vw(0));
-        margin-left: vw(26);
+        margin-left: vw(17);
         color: $text-white;
         opacity: 1;
         background-color: transparent;
         border: none;
-        outline: none;
+        // outline: none;
     }
 }
 .nav{
@@ -73,14 +75,14 @@ margin-right: vw(10);
     &__link{
         text-decoration: none;
         color: $text-white;
-        @include font(vw(14),vh(700),vw(25));
+        @include font(vw(15),vh(700),vw(25));
 
     }
 }
 .call{
     /*display: inline-block;*/
     /*justify-self: flex-end;*/
-    @include font(vw(13),bold,vw(30));
+    @include font(vw(15),bold,vw(30));
     color: $text-white;
     text-decoration: none;
     display: flex;
