@@ -18,7 +18,7 @@
         }
 
         &__title{
-            @include font(vw(13),700,vw(25));
+            @include font(vw(15),800,vw(25));
             color: $text-gray-blue6B;
         }
         &__bottom{
@@ -26,19 +26,24 @@
             justify-content: space-between;
             min-height: vw(60);
             align-items: center;
-            border:vw(2) solid $border-color;
+            border:vw(3) solid $border-color;
+            border-left: vw(2) solid $border-color;
+            &:last-child{
+                margin-left: vw(3) solid $border-color;
+            }
         }
         &__rating{
             width: 33%;
+            @include flex();
             span{
-            @include font(vw(13),700,vw(25));
+            @include font(vw(14),700,vw(25));
             color: $text-gray-blue6B;
             }
         }
         &__price{
-            border:vw(2) solid $border-color;
+            border:vw(2.6) solid $border-color;
             width: 33%;
-            @include font(vw(13),700,vw(25));
+            @include font(vw(14),700,vw(25));
             color: $text-gray-blue6B;
             align-self: stretch;
             @include flex();
@@ -47,7 +52,7 @@
         }
         &__buy{
             width: 33%;
-            @include font(vw(13),700,vw(25));
+            @include font(vw(14),700,vw(25));
             color: $text-pink;
             border: none;
             background-color: transparent;
