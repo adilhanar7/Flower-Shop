@@ -13,7 +13,6 @@
      }
      &__title{
         @include font(vw(61) , 400 , vw(90));
-        text-align: center;
         color: $text-white;
         margin: vh(67) 0 vh(68);
         
@@ -90,8 +89,72 @@
     }
 
 
-
-
-
-
-
+@media screen and (max-width:1024px){
+    .hero{
+        background: url('../img/hero-bg.png')no-repeat center;
+        height: 120vh;
+        background-size: cover;
+        background-position: center vmin(-139);
+        position: relative;
+        z-index: 0;
+        &__content{
+             padding-top: vmin(300);
+             max-width: 100%;
+             margin: 0 auto;
+             text-align: center;
+         }
+         &__title{
+            @include font(vmin(42) , 400 , 1.5);
+            color: $text-white;
+            margin: vmin(40) 0 vmin(40);
+            flex-wrap: wrap
+         }
+        &__link{
+            @include font(vmin(10),800 ,1.5);
+            color: $text-white;
+            background-color: $bg-pink;
+            border-radius: vmin(30);
+            padding: vmin(5) vmin(16);
+            text-decoration: none;
+    
+         }
+         &-list {
+             display: flex;
+             list-style-type: none;
+             padding-left: 0;
+             justify-content: center;
+             margin-bottom: vmin(100);
+             &__item{
+                @include font(vmin(12),700 ,vmin(26));
+                color: $text-white;
+                margin-right: vmin(15);
+                position: relative;
+                &::after{
+                    content: '×';
+                    position: absolute;
+                    right: vmin(-10);
+                }
+                &:last-child{
+                    &::after{
+                        display: none;
+                    }
+                }
+             }
+         }
+         &-info{
+             color: $text-white;
+             list-style-type: none;
+             flex-direction: column;
+             &__item{
+                span{
+                    @include font(vmin(13),bold ,vmin(25));
+                    color: $text-white;
+            }
+            img{
+                margin-right: vmin(30);
+                width: vmin(17);
+            }
+        }
+    }
+ }
+}

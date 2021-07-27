@@ -21,7 +21,7 @@ body{
     background: $bg-body;
 }
 .container{
-    max-width: vw(900);
+    max-width: vw(1110);
     margin: 0 auto;
 }
 a{
@@ -55,7 +55,6 @@ a{
 .col-6{
     width: 50%;
 }
-
 .title{
     @include font(vw(20),300 ,vw(34));
     color: $text-gray-blue;
@@ -78,7 +77,6 @@ a{
        z-index: -1;
      }    
 }
-
 .text{
     @include font(vw(15),500 ,vw(25));
     color: $text-gray-blue;
@@ -95,29 +93,6 @@ a{
 .col-3{
     width: 25%;
 }
-/*
-.orange-btn{
-    background: $bg-orange66;
-    border-radius: vw(30);
-    border: none;
-    @include font(vw(13),bold ,vw(30));
-    padding: vw(5) vh(30);
-    color: $text-orange66;
-
-}
-.title-bg{
-    position: absolute;
-    @include font(vw(150),800 ,vw(220));
-    opacity: 0.03;
-    color: #002881;
-    transform: translateX(-50%);
-    left: 50%;
-    z-index: -1;
-    top: -270%;
-}*/
-
-
-
 .badge{
     @include font(vw(12),800,vw(20));
     color: $text-orange;
@@ -140,3 +115,23 @@ hr{
     border-color: #EDEFF2;
     margin: 0;
 }
+
+
+@media screen and (max-width:1024px){
+    .col-6,.col-4,.col-3{
+        width: 100%;
+    }
+    .container{
+        max-width: 100%;
+        padding: 0 vmin(30);
+    }
+    .pink-btn{
+        color: $text-pink;
+        background: $bg-light-pink;
+        border-radius: vmin(30);
+        text-decoration: none;
+        @include font(vmin(13),700 ,vmin(30));
+        padding: vmin(5) vmin(30);
+    }
+}
+

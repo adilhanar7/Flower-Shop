@@ -85,3 +85,97 @@
         }
     }
 }
+
+
+
+
+
+// @media screen and (max-width:1024px){
+//     .catalog{
+//         text-align: center;
+//         &__row{
+//             padding-top: vmin(60);
+//         }
+//         &-item{
+//             background: $bg-white;
+//             padding: vmin(32) 0 0 0;
+//             box-sizing: border-box;
+//             position: relative;
+//             &__icon{
+//                 top:vmin(26);
+//                 right: vmin(26);
+//                 position: absolute;
+//                 width: vmin(20);
+//                 height: vmin(20);
+//                 fill: rgb(223, 222, 222);
+//             }
+    
+//             &__title{
+//                 @include font(vmin(15),800,vmin(25));
+//                 color: $text-gray-blue6B;
+//             }
+//             &__bottom{
+//                 display: flex;
+//                 justify-content: space-between;
+//                 min-height: vmin(60);
+//                 align-items: center;
+//                 border:vmin(3) solid $border-color;
+//                 border-left: vmin(2) solid $border-color;
+//                 &:last-child{
+//                     margin-left: vmin(3) solid $border-color;
+//                 }
+//             }
+//             &__rating{
+//                 width: 33%;
+//                 @include flex();
+//                 span{
+//                 @include font(vmin(14),700,vmin(25));
+//                 color: $text-gray-blue6B;
+//                 }
+//             }
+//             &__price{
+//                 border:vmin(2.6) solid $border-color;
+//                 width: 33%;
+//                 @include font(vmin(14),700,vmin(25));
+//                 color: $text-gray-blue6B;
+//                 align-self: stretch;
+//                 @include flex();
+//                 margin-top: vmin(-1);
+//                 margin-bottom: vmin(-2);
+//             }
+//             &__buy{
+//                 width: 33%;
+//                 @include font(vmin(14),700,vmin(25));
+//                 color: $text-pink;
+//                 border: none;
+//                 background-color: transparent;
+//                 cursor: pointer;
+//                 z-index: 1;
+//                 align-self: stretch;
+//                 transition: 0.3s;
+//                 position: relative;
+//                 overflow: hidden;
+//                 &::before{
+//                     content: '';
+//                     width: 100%;
+//                     height: 100%;
+//                     right: -100%;
+//                     top: -100%;
+//                     z-index: -1;
+//                     position: absolute;
+//                     background-color: $bg-light-pink;
+//                     transition: 0.3s;
+//                     }
+//                 &:hover{
+//                 color: $text-white;
+//                 &::before{
+//                 top: 0;
+//                 right: 0;
+//                 background-color: $bg-pink;
+//                  }
+//                 }
+                
+//             }
+//         }
+//     }
+// }
