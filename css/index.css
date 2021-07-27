@@ -27,7 +27,7 @@
   width: 100%;
   position: absolute;
   left: 0vw;
-  top: 6.93359vh;
+  padding-top: 6.64062vh;
   z-index: 1;
 }
 
@@ -38,9 +38,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .burger {
@@ -79,7 +76,7 @@
   font-size: 1.25vw;
   line-height: 0vw;
   color: #ffffff;
-  margin-right: 1.33438vw;
+  margin-right: 6.25vw;
 }
 
 .search {
@@ -154,7 +151,64 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 3.75vw;
+  margin-left: 7.5vw;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    padding-top: 5.33333vmin;
+  }
+  .header__row {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .header .nav, .header .call {
+    display: none;
+  }
+  .header .burger span {
+    position: relative;
+    display: inline-block;
+    width: 4.8vmin;
+    height: 0.53333vmin;
+    min-width: 18px;
+    min-height: 2px;
+    border-radius: 0.8vmin;
+    background-color: #ffffff;
+  }
+  .header .burger span::before, .header .burger span::after {
+    content: '';
+    position: absolute;
+    -webkit-transform: translateY(-1.33333vmin);
+            transform: translateY(-1.33333vmin);
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+  }
+  .header .burger span::after {
+    -webkit-transform: translateY(1.33333vmin);
+            transform: translateY(1.33333vmin);
+    background: #ffffff;
+  }
+  .header .logo {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5.33333vmin;
+    line-height: 0vmin;
+    color: #ffffff;
+  }
+  .header .search {
+    display: none;
+  }
 }
 
 .hero {
@@ -179,7 +233,6 @@
   font-weight: 400;
   font-size: 3.8125vw;
   line-height: 5.625vw;
-  text-align: center;
   color: #ffffff;
   margin: 6.54297vh 0 6.64062vh;
 }
@@ -290,6 +343,95 @@
   color: #4d5e80;
 }
 
+@media screen and (max-width: 1024px) {
+  .hero {
+    background: url("../img/hero-bg.png") no-repeat center;
+    height: 120vh;
+    background-size: cover;
+    background-position: center -37.06667vmin;
+    position: relative;
+    z-index: 0;
+  }
+  .hero__content {
+    padding-top: 80vmin;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hero__title {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11.2vmin;
+    line-height: 1.5;
+    color: #ffffff;
+    margin: 10.66667vmin 0 10.66667vmin;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .hero__link {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.66667vmin;
+    line-height: 1.5;
+    color: #ffffff;
+    background-color: #E62E7B;
+    border-radius: 8vmin;
+    padding: 1.33333vmin 4.26667vmin;
+    text-decoration: none;
+  }
+  .hero-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 26.66667vmin;
+  }
+  .hero-list__item {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2vmin;
+    line-height: 6.93333vmin;
+    color: #ffffff;
+    margin-right: 4vmin;
+    position: relative;
+  }
+  .hero-list__item::after {
+    content: '×';
+    position: absolute;
+    right: -2.66667vmin;
+  }
+  .hero-list__item:last-child::after {
+    display: none;
+  }
+  .hero-info {
+    color: #ffffff;
+    list-style-type: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero-info__item span {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.46667vmin;
+    line-height: 6.66667vmin;
+    color: #ffffff;
+  }
+  .hero-info__item img {
+    margin-right: 8vmin;
+    width: 4.53333vmin;
+  }
+}
+
 .about {
   display: block;
 }
@@ -349,6 +491,7 @@
 
 .about__container {
   display: block;
+  text-align: center;
 }
 
 .about__container .about__link {
@@ -362,96 +505,8 @@
   line-height: 2.92969vh;
   padding: 0.625vw 2.92969vh;
   color: #E62E7B;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  bottom: -5.6875vw;
 }
 
-/*.features{
-    .wedding{
-        background: url('../../img/Wedding.png')no-repeat;
-        width: vw(540);
-        height: vw(350);
-    }
-    .send{
-        background: url('../../img/Send.png')no-repeat;
-        width: vw(540);
-        height: vw(350);
-    }
-    .order{
-        background: url('../../img/order.png')no-repeat;
-        width: vw(540);
-        height: vw(350);
-    }
-    &__video{
-        padding: vh(50);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        border-radius: vw(10);
-        box-sizing: border-box;
-    }
-    &__play{
-        background: $bg-pink;
-        border-radius: 100%;
-        width: vw(60);
-        height: vw(60);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: vw(0) vw(10) vw(30) rgba(229, 46, 123, 0.5);
-    }
-    &__shape{
-        clip-path: polygon(100% 46%,0 0,0 100%);
-        background: $bg-white;
-        width: vw(10);
-        height: vw(12);
-    }
-    &__more {
-        background: #0D111A;
-        opacity: 0.5;
-        border-radius: 30px;
-        width: vw(40);
-        height: vw(40);
-        display: flex;
-        align-items: center;
-        justify-content: center;     
-    }
-    &__bottom{
-        align-items: center;
-        justify-content: space-between;
-        margin-top: vw(130);
-    }
-    &__description{
-        color: $text-white;
-        @include font(vw(16),600 ,vw(25));
-    }
-    &__title{
-        @include font(vw(36),normal ,vw(30));
-        margin: vw(45)0;
-        color: $text-gray-blue;
-        strong{
-        @include font(vw(36),bold ,vw(70));
-        color: $text-dark-blue;
-        }
-    }
-    &__price{
-        text-decoration: none;
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        color: $text-gray-blue;
-        @include font(vw(16),normal ,vw(25));
-    }
-    &__text{
-        padding:vw(0) vw(100);
-    }
-    &__block{
-        margin-top: vw(125);
-    }
-}*/
 .service {
   padding: 7.8125vw;
 }
@@ -536,7 +591,7 @@
   border-radius: 0.625vw;
 }
 
-.service-item.service-item__image .service__item__subtitle {
+.service-item.service-item__image__item__subtitle {
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 600;
@@ -625,6 +680,156 @@
 .service .next:hover svg {
   -webkit-transform: translateX(0.3125vw);
           transform: translateX(0.3125vw);
+}
+
+@media screen and (max-width: 1024px) {
+  .service .pink-btn {
+    margin-top: 5.33333vmin;
+    display: inline-block;
+  }
+  .service-item__title {
+    margin-top: 0;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9.06667vmin;
+    line-height: 16vmin;
+    color: #4D5E80;
+  }
+  .service-item__title strong {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9.06667vmin;
+    line-height: 16vmin;
+    color: #2c3150;
+  }
+  .service-item__link {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.26667vmin;
+    line-height: 8vmin;
+    color: #6B7A99;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    /* align-items: center;
+               justify-content: center;*/
+    margin-bottom: 5.33333vmin;
+  }
+  .service-item__link svg {
+    margin-left: 6.66667vmin;
+    width: 4vmin;
+    height: 4vmin;
+  }
+  .service__item__subtitle {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.2vmin;
+    line-height: 6.93333vmin;
+    color: #ffffff;
+  }
+  .service .conatainer {
+    padding: 0;
+  }
+  .service__row:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .service-item.service-item__image {
+    padding: 6.66667vmin;
+    min-height: 93.33333vmin;
+  }
+  .service-item.service-item__image .play {
+    width: 10.66667vmin;
+    height: 10.66667vmin;
+    background: #E62E7B;
+    -webkit-box-shadow: 0vmin 2.66667vmin 8vmin #E62E7B;
+            box-shadow: 0vmin 2.66667vmin 8vmin #E62E7B;
+    border-radius: 8vmin;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .service-item.service-item__image .play svg, .service-item.service-item__image .play svg path {
+    width: 2.66667vmin;
+    height: 2.66667vmin;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .service-item.service-item__image .play:hover {
+    background: #ffffff;
+    -webkit-box-shadow: 0vmin 2.66667vmin 8vmin #ffffff;
+            box-shadow: 0vmin 2.66667vmin 8vmin #ffffff;
+    cursor: pointer;
+  }
+  .service-item.service-item__image .play:hover svg path {
+    fill: #E62E7B;
+  }
+  .service-item.service-item__image .play:hover svg {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  .service-item.service-item__image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 93.33333vmin;
+    z-index: -1;
+    border-radius: 2.66667vmin;
+  }
+  .service .next {
+    position: absolute;
+    bottom: 6.66667vmin;
+    right: 6.66667vmin;
+    background: rgba(0, 0, 0, 0.5);
+    /*opacity: 0.5;*/
+    border-radius: 8vmin;
+    width: 16vmin;
+    height: 16vmin;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .service .next svg, .service .next svg path {
+    width: 5.33333vmin;
+    height: 5.33333vmin;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .service .next:hover svg {
+    -webkit-transform: translateX(0.3125vw);
+            transform: translateX(0.3125vw);
+  }
 }
 
 .catalog {
@@ -792,6 +997,7 @@
 }
 
 .social .slick-prev.slick-arrow {
+  cursor: pointer;
   position: absolute;
   left: 0;
   font-size: 0;
@@ -816,6 +1022,7 @@
 }
 
 .social .slick-next.slick-arrow {
+  cursor: pointer;
   position: absolute;
   right: 0;
   font-size: 0;
@@ -1077,7 +1284,7 @@ body {
 }
 
 .container {
-  max-width: 56.25vw;
+  max-width: 69.375vw;
   margin: 0 auto;
 }
 
@@ -1189,26 +1396,6 @@ a {
   width: 25%;
 }
 
-/*
-.orange-btn{
-    background: $bg-orange66;
-    border-radius: vw(30);
-    border: none;
-    @include font(vw(13),bold ,vw(30));
-    padding: vw(5) vh(30);
-    color: $text-orange66;
-
-}
-.title-bg{
-    position: absolute;
-    @include font(vw(150),800 ,vw(220));
-    opacity: 0.03;
-    color: #002881;
-    transform: translateX(-50%);
-    left: 50%;
-    z-index: -1;
-    top: -270%;
-}*/
 .badge {
   font-family: 'SF Pro Display';
   font-style: normal;
@@ -1236,5 +1423,27 @@ a {
 hr {
   border-color: #EDEFF2;
   margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .col-6, .col-4, .col-3 {
+    width: 100%;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0 8vmin;
+  }
+  .pink-btn {
+    color: #E62E7B;
+    background: #e9d7e0;
+    border-radius: 8vmin;
+    text-decoration: none;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.46667vmin;
+    line-height: 8vmin;
+    padding: 1.33333vmin 8vmin;
+  }
 }
 /*# sourceMappingURL=index.css.map */

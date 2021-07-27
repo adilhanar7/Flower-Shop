@@ -49,3 +49,61 @@
     }
     
 }
+
+
+
+
+
+
+// @media screen and (max-width:1024px){
+//     .location{
+//         // padding: vmin(120);
+//         ul{
+//             list-style-type: none;
+//         }
+//         &__top{
+//         text-align: center;
+//         }
+//         &__map{
+//             position: relative;
+//         .map{
+//           height:vmin(540);
+//           width: 100%;
+//          }
+//         }
+//         &-modal{
+//             position: absolute;
+//             padding: vmin(20);
+//             background: $bg-white;
+//             right: vmin(20);
+//             top: vmin(10);
+//             box-shadow: 0 vmin(2) vmin(5) rgba(54, 61, 77, 0.05);
+//             border-radius: vmin(10);
+//             &__item{
+//                 margin-bottom: vmin(15);
+//                 @include font(vmin(13),bold,vmin(25));
+//                 color: $text-gray-blue6B;
+//                 display: flex;
+//                 align-items: center;
+//                 img{
+//                     width: vmin(16);
+//                     height: vmin(16);
+//                 }
+//                 &:last-child{
+//                     align-items: flex-start;
+//                     margin-bottom: 0;
+//                 }
+//                 span:first-child{
+//                     color: $text-gray-blue39;
+//                 }
+//                 span + span{
+//                     margin-left: vmin(25);
+//                 }
+//             }
+//             &__list{
+//             margin: 0;
+//             padding: 0;
+//           }
+//         }
+//     }
+// }
