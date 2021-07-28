@@ -92,22 +92,22 @@
 @media screen and (max-width:1024px){
     .hero{
         background: url('../img/hero-bg.png')no-repeat center;
-        height: 120vh;
+        height: 240vmin;
         background-size: cover;
-        background-position: center vmin(-139);
+        background-position: center vmin(-100);
         position: relative;
         z-index: 0;
         &__content{
-             padding-top: vmin(300);
              max-width: 100%;
              margin: 0 auto;
              text-align: center;
          }
          &__title{
-            @include font(vmin(42) , 400 , 1.5);
+            @include font(vmin(30) , 400 , 1.5);
             color: $text-white;
-            margin: vmin(40) 0 vmin(40);
-            flex-wrap: wrap
+            margin: vmin(10) 0 vmin(-10);
+            flex-wrap: wrap;
+            white-space: pre-wrap;
          }
         &__link{
             @include font(vmin(10),800 ,1.5);
@@ -155,6 +155,19 @@
                 width: vmin(17);
             }
         }
+    }
+    &__anchor{
+        @include font(vmin(14),700 ,vmin(30));
+        text-decoration: none;
+        padding: vmin(15) vmin(30);
+        background: $bg-white;
+        box-shadow: 0 vmin(10) vmin(30)black;
+        border-radius: vmin(30);
+        transform: translateX(-50%);
+        left: 50%;
+        bottom: 8.8%;
+        position: absolute;
+        color: $text-gray-blue;
     }
  }
 }

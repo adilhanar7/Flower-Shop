@@ -54,57 +54,55 @@
 
 
 
-
-// @media screen and (max-width:1024px) {
-//     .about{
-//         display: block;
-//         &__bg-text{
-//             top: 98%;
-//             position: absolute;
-//         }
-//         .row{
-//             margin: vmin(-15);
-//         }
-//        &__item{
-//         background: $bg-white;
-//         border-radius: vmin(10);
-//         box-shadow: vmin(0)vmin(2)vmin(5)rgba(54 , 61 ,70 ,0.03);
-//         // padding:vw(15) vw(8) vw(38) vw(54)/*vw(10) vw(54) vw(5) vw(10)*/;
-//         padding: vmin(40) vmin(105);
-//         height: vmin(350);
-//         box-sizing: border-box;
-//         align-items: center;
-//         margin: vmin(15);
-//         text-align: center;
-//        }
-//        &-card{
-//         &__title{
-//         @include font(vmin(20),300 ,vmin(34));
-//         color: $text-gray-blue;
-//         strong{
-//         @include font(vmin(20),bold ,vmin(34));
-//         color: $text-dark-blue;
-//         }
-//        }
-//        &__text{
-//         @include font(vmin(15),500 ,vmin(16));
-//         color: $text-gray-blue;
-//         max-width: vmin(130);
-//        }
-//       }  
-//     }
-//     .about__container{
-//         display: block;
-//         text-align: center;
-//         .about__link{
-//             background: $bg-light-pink;
-//             border-radius: vmin(30);
-//             text-decoration: none;
-//             @include font(vmin(13),700 ,vmin(30));
-//             padding: vmin(10) vmin(30);
-//             color: $text-pink;
-//         }
+@media screen and (max-width:1024px) {
+    .about{
+        display: block;
+        &__bg-text{
+            top: 98%;
+            position: absolute;
+        }
+        .row{
+            margin: vmin(-15);
+        }
+       &__item{
+        background: $bg-white;
+        border-radius: vmin(10);
+        box-shadow: 0 vmin(2)vmin(5)rgba(54 , 61 ,70 ,0.03);
+        // padding:vw(15) vw(8) vw(38) vw(54)/*vw(10) vw(54) vw(5) vw(10)*/;
+        padding: vmin(38) vmin(12);
+        height: vmin(350);
+        box-sizing: border-box;
+        align-items: center;
+        margin: vmin(15);
+        text-align: center;
+       }
+       &-card{
+        &__title{
+        @include font(vmin(20),300 ,vmin(34));
+        color: $text-gray-blue;
+        strong{
+        @include font(vmin(20),bold ,vmin(34));
+        color: $text-dark-blue;
+        }
+       }
+       &__text{
+        @include font(vmin(15),500 ,vmin(16 ));
+        color: $text-gray-blue;
+        max-width: vmin(130);
+       }
+      }  
+    }
+    .about__container{
+        display: block;
+        text-align: center;
+        .about__link{
+            background: $bg-light-pink;
+            border-radius: vmin(30);
+            text-decoration: none;
+            @include font(vmin(13),700 ,vmin(30));
+            padding: vmin(10) vmin(30);
+            color: $text-pink;
+        }
         
-//     }
-    
-// }
+    }
+}
