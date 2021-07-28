@@ -49,12 +49,11 @@
             z-index: -1;
             border-radius: vw(10);
         }
-        
-        &__item__subtitle{
-           @include font(vw(16),600,vw(30));
-            color: $text-white;
-        }
 
+    }  
+    &__item__subtitle{
+       @include font(vw(20),600,vw(30));
+        color: $text-white;
     }
      &-item{
          padding:0 vw(100);
@@ -201,7 +200,7 @@
             height: vmin(20);
             transition: 0.2s;
         }
-        &:hover svg{
+        &:active svg{
             transform: translateX(vw(5));
         }
      }

@@ -118,6 +118,68 @@ hr{
 
 
 @media screen and (max-width:1024px){
+    .bg-text{
+        position: absolute;
+        @include font(vmin(90),800 ,vmin(220));
+        opacity: 0.03;
+        color: #002881;
+        transform: translateX(-50%);
+        left: 50%;
+        z-index: -1;
+    }
+    .pink-btn{
+        color: $text-pink;
+        background: $bg-light-pink;
+        border-radius: vmin(30);
+        text-decoration: none;
+        @include font(vmin(13),700 ,vmin(30));
+        padding: vmin(5) vmin(30);
+    }
+    .title{
+        @include font(vmin(20),300 ,vmin(34));
+        color: $text-gray-blue;
+        text-align: center;
+        position: relative;
+        strong{
+        @include font(vmin(20),bold ,vmin(34));
+        color: $text-dark-blue;
+        }
+        
+         .title__bg-text{
+           position: absolute;
+           left:50%;
+           top: 50%;
+           transform: translate(-50%,-50%);
+           @include font(vmin(150),800 ,vmin(220));
+           opacity: 0.03;
+           color: #002881;
+           opacity: 0.03;
+           z-index: -1;
+         }    
+    }
+    .text{
+        @include font(vmin(15),500 ,vmin(25));
+        color: $text-gray-blue;
+        max-width: vmin(650);
+        /*flex-wrap: wrap;*/
+        text-align: center;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        /*align-content: center;
+        justify-content: center;
+        justify-self: center;*/
+    }
+    .badge{
+        @include font(vmin(12),800,vmin(20));
+        color: $text-orange;
+        background: $bg-light-orange;
+        border-radius: vmin(30);
+        border: none;
+        outline: none;
+        padding: vmin(5)vmin(22);
+    
+    }
     .col-6,.col-4,.col-3{
         width: 100%;
     }

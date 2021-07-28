@@ -62,3 +62,80 @@
             }
         }
  }
+
+
+.footer{
+    @include mobile(){
+            padding: vmin(90) 0 vmin(65);
+            &-item:last-child{
+                margin-left: vmin(30);
+                margin-bottom: vmin(40);
+            }
+            &__rights{
+                @include font(vmin(13),bold,vmin(25));
+                color: $text-gray-blue;
+            }
+            &__bottom{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                padding: vmin(48) 0 vmin(42);
+                h3{
+                    align-self: flex-end;
+                }
+                ul{
+                    list-style-type: none;
+                    display: flex;
+                    align-self: flex-end;
+                    li{
+                        margin-left: vmin(55);
+                        a{
+                            text-decoration: none;
+                            @include font(vmin(13),bold,vmin(25));
+                            color: $text-gray-blue
+                        }
+                    }
+                }
+            }
+            &__logo{
+                @include font(vmin(24),bold,vmin(30));
+                color: $text-dark-blue;
+                margin-left: vmin(40);
+            }
+                &-list{
+                    list-style-type: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    &__item{
+                        width: 33.33%;
+                        margin-bottom: vmin(20);
+                    }
+                    &__link{
+                        @include font(vmin(13),bold,vmin(25));
+                        color: $text-gray-blue;
+                    }
+                }
+                &__reviews{
+                    span{
+                    @include font(vmin(14),bold,vmin(30));
+                    color:$text-gray-blue;
+                    margin-right: vmin(20);
+                    }
+                    img{
+                    transform: rotate(180deg);
+                    }
+                }
+                &__rating{
+                    margin-bottom: vmin(20);
+                }
+                &__row{
+                    justify-content: space-between;
+                    padding-bottom: vmin(65);
+                    &-lefts{
+                        align-items: center;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+            }
+    };
+}
