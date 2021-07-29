@@ -1488,6 +1488,68 @@
   padding: 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .location ul {
+    list-style-type: none;
+  }
+  .location__top {
+    text-align: center;
+  }
+  .location__map {
+    position: relative;
+  }
+  .location__map .map {
+    height: 93.33333vmin;
+  }
+  .location-modal {
+    display: none;
+    position: absolute;
+    padding: 8vmin;
+    background: #ffffff;
+    right: 5.33333vmin;
+    bottom: 10.66667vmin;
+    -webkit-box-shadow: 0 0.53333vmin 1.33333vmin rgba(54, 61, 77, 0.05);
+            box-shadow: 0 0.53333vmin 1.33333vmin rgba(54, 61, 77, 0.05);
+    border-radius: 2.66667vmin;
+  }
+  .location-modal img {
+    margin-right: 9.6vmin;
+    width: 5.33333vmin;
+    height: 5.33333vmin;
+  }
+  .location-modal__item {
+    margin-bottom: 6.66667vmin;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.46667vmin;
+    line-height: 6.66667vmin;
+    color: #6B7A99;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .location-modal__item:last-child {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 0;
+  }
+  .location-modal__item span:first-child {
+    color: #C3CAD9;
+  }
+  .location-modal__item span + span {
+    margin-left: 6.66667vmin;
+  }
+  .location-modal__list {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .footer {
   padding: 5.625vw 0 4.0625vw;
 }
